@@ -1,0 +1,118 @@
+.container {
+    position: relative;   
+	width: 100%;
+    height: 100%;
+}
+
+.tabParent {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid;
+	background-color: #CCC;
+	cursor: pointer;
+}
+
+.tab {
+	float: left;
+	width: 50%;
+}
+
+.active {
+	background-color: #ff9800;
+}
+
+.containerList {
+	position: relative;
+	margin-top: 10px;
+	text-align: center;
+	margin: 2%;
+}
+
+.box {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 150px;
+	box-sizing: border-box;
+    border: 1px solid #CCC;
+}
+
+.tableLeftCol {
+	position: relative;
+	float: left;
+}
+
+.profileImg {
+    width: 120px;
+    height: 120px;
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.addButton {
+	margin-top: -65px;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    color: #FF9800;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.tableData {
+	display: table;
+	margin-top: 22px;
+}
+
+.tCell1 {
+	display: table-cell;
+}
+
+.tCellData1 {
+	padding-top: 8px;
+    width: auto;
+    height: auto;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+	text-align: right;
+}
+
+.tCell2 {
+	display: table-cell;
+	padding-left: 15px;
+}
+
+.tCellData2 {
+	padding-top: 8px;
+    width: auto;
+    height: auto;
+    font-family: sans-serif;
+    font-size: 15px;
+	text-align: left;
+}
+
+@media screen and (max-width: 1061px) {
+	.box {
+		width: 70%;
+		left: 50%;
+		margin-bottom: 15px;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.box {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.container {
+		min-width: 650px;
+	}
+}
